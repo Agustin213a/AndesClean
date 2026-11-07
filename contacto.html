@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AndesClean - Servicios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom navbar-dark py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="./index.html">
+                🫧 AndesClean
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link " href="./servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="position-relative bg-dark contacto-header">
+        <img src="./img/contacto-inicio.png" class="w-100 h-100" style="object-fit: cover" alt="Equipo de limpieza profesional">
+        <div class="position-absolute top-50 start-50 translate-middle text-center text-white w-100 px-3" style="z-index: 10;">
+            <h1 class="header-custom titulo-contacto display-5 fw-bold mb-3">Contactanos</h1>
+            <p class="header-custom subtitulo-contacto lead mb-4">Estamos listos para ayudarte. Escribinos y <br>armamos un plan a tu medida.</p>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <div class="card contacto-card shadow-sm mb-5 p-4 p-md-5">
+            <h2 class="contacto-titulo text-center mb-4">Envianos tu consulta</h2>
+            
+            <form>
+                <div class="row g-3 mb-3">
+                    <div class="col-md-6">
+                        <label for="nombre" class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre completo" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="empresa" class="form-label">Empresa o Negocio (opcional)</label>
+                        <input type="text" class="form-control" id="empresa" placeholder="Empresa o Negocio (opcional)">
+                    </div>
+                </div>
+                
+                <div class="row g-3 mb-3">
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="telefono" class="form-label">Telefono / Whatsapp</label>
+                        <input type="tel" class="form-control" id="telefono" placeholder="Telefono / Whatsapp" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <select class="form-select text-muted" aria-label="Seleccionar servicio" required>
+                        <option selected disabled value="">¿Qué servicio te interesa?</option>
+                        <option value="1">Limpieza de Casas y Residencias</option>
+                        <option value="2">Mantenimiento Comercial y Oficinas</option>
+                        <option value="3">Limpieza Post-Evento</option>
+                        <option value="4">Otro</option>
+                    </select>
+                </div>
+
+                <div class="mb-4">
+                    <textarea class="form-control" rows="4" placeholder="Detallá los metros cuadrados aproximados, ambientes, frecuencia requerida o cualquier otra consulta..." required></textarea>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-azul px-5 py-2">Enviar Mensaje</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="card contacto-card shadow-sm p-4 p-md-5">
+            <h2 class="contacto-titulo text-center mb-3">Información de Contacto</h2>
+            <p class="text-center mb-5 text-muted px-md-4">Si tenés dudas sobre nuestros servicios o necesitás una cotización urgente, podés comunicarte directamente a través de estos canales.</p>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="mb-4">
+                        <h5 class="info-titulo">Ubicación:</h5>
+                        <p class="info-texto mb-0">San Juan, Argentina</p>
+                    </div>
+                    <div>
+                        <h5 class="info-titulo">Horarios de atención:</h5>
+                        <p class="info-texto mb-0">Lunes a Viernes de 08:00 a 18:00hs<br>Sábados de 09:00 a 13:00hs</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-4">
+                        <h5 class="info-titulo">Telefono / Whatsapp:</h5>
+                        <p class="info-texto mb-0">+54 11 1234-5678</p>
+                    </div>
+                    <div>
+                        <h5 class="info-titulo">Email:</h5>
+                        <p class="info-texto mb-0">info@limptech.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-white py-4 mt-auto">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <div class="footer-logo d-flex align-items-center justify-content-center justify-content-md-start">
+                        🫧 AndesClean
+                    </div>
+                    <small class="texto-footer">Soluciones de limpieza integral</small>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="texto-footer mb-1 text-decoration-underline">info@limptech.com</p>
+                    <p class="texto-footer mb-2">+54 11 1234-5678</p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-md-end">
+                        <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

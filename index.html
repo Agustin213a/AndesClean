@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AndesClean - Inicio</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-custom navbar-dark py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="./index.html">
+                🫧 AndesClean
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item"><a class="nav-link active" href="./index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="position-relative bg-dark hero-header">
+        <img src="./img/imagen-inicio.jpg" class="w-100 h-100" style="object-fit: cover" alt="Equipo de limpieza profesional">
+        <div class="position-absolute top-50 start-50 translate-middle text-center text-white w-100 px-3" style="z-index: 10;">
+            <h1 class="display-5 fw-bold mb-3 titulo-principal">Más que limpiar, transformamos espacios.</h1>
+            <p class="lead mb-4">Servicios de limpieza profesionales para hogares, oficinas y comercios.</p>
+            <a href="./nosotros.html" class="btn btn-header btn-outline-light rounded-pill px-4 py-2 fw-semibold">
+                Nosotros <i class="bi bi-chevron-right ms-1"></i>
+            </a>
+        </div>
+    </header>
+
+    <section class="container py-5 text-center">
+        <h2 class="mb-5" style="color: var(--primary); font-weight: 700;">Conocé nuestros servicios:</h2>
+        
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card h-100">
+                    <img src="./img/carrusel1.jpg" class="card-img-top" alt="Limpieza post-evento">
+                    <div class="card-body d-flex flex-column align-items-center p-4">
+                        <h5 class="card-title">Limpieza post-evento</h5>
+                        <p class="card-text">Dejamos todo impecable después de cada celebración o evento.</p>
+                        <a href="./servicios.html" class="btn btn-celeste mt-auto">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card h-100">
+                    <img src="./img/carrusel2.jpg" class="card-img-top" alt="Limpieza de casas">
+                    <div class="card-body d-flex flex-column align-items-center p-4">
+                        <h5 class="card-title">Limpieza de casas</h5>
+                        <p class="card-text">Mantenemos tu hogar limpio, fresco y en perfectas condiciones.</p>
+                        <a href="./servicios.html" class="btn btn-celeste mt-auto">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card h-100">
+                    <img src="./img/carrusel3.jpg" class="card-img-top" alt="Limpieza comercial">
+                    <div class="card-body d-flex flex-column align-items-center p-4">
+                        <h5 class="card-title">Limpieza comercial</h5>
+                        <p class="card-text">Mantenimiento diario o semanal para espacios de trabajo impecables.</p>
+                        <a href="./servicios.html" class="btn btn-celeste mt-auto">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clientes-section py-5 text-center">
+        <div class="container">
+            <h2 class="mb-5 fw-bold">Clientes que confían en nosotros:</h2>
+            
+            <div class="row justify-content-center align-items-baseline g-4 mb-5">
+                <div class="col-6 col-md-3">
+                    <img src="./img/logo-empresa1.png" alt="San Juan Office" class="img-fluid cliente-logo">
+                    <p class="cliente-texto">"Excelente servicio, siempre atentos a cada detalle."</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="./img/logo-empresa2.png" alt="Andes Hotel" class="img-fluid cliente-logo">
+                    <p class="cliente-texto">"Profesionales, puntuales y muy responsables."</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="./img/logo-empresa3.png" alt="Cuyo Center" class="img-fluid cliente-logo">
+                    <p class="cliente-texto">"El resultado superó nuestras expectativas."</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="./img/logo-empresa4.png" alt="Del Sol Inmobiliaria" class="img-fluid cliente-logo">
+                    <p class="cliente-texto">"Desde que los contratamos, nuestro espacio luce impecable."</p>
+                </div>
+            </div>
+            
+            <a href="./contacto.html" class="btn btn-azul px-4 py-2">Contactanos</a>
+        </div>
+    </section>
+
+    <footer class="text-white py-4 mt-auto">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <div class="footer-logo d-flex align-items-center justify-content-center justify-content-md-start">
+                        🫧 AndesClean
+                    </div>
+                    <small class="texto-footer">Soluciones de limpieza integral</small>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="texto-footer mb-1 text-decoration-underline">info@limptech.com</p>
+                    <p class="texto-footer mb-2">+54 11 1234-5678</p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-md-end">
+                        <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
