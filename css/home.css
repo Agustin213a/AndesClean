@@ -49,8 +49,6 @@ body {
 .service-card img {
     height: 200px;
     object-fit: cover;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
 }
 .service-card .card-title {
     color: var(--primary);
