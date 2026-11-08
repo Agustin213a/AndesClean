@@ -153,6 +153,10 @@ footer {
         padding-right: 0;
     }
 
+    .subtitulo-servicios {
+        font-size: 1.5rem;
+    }
+
     .servicio-img {
         max-height: 280px;
     }
