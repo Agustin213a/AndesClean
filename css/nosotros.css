@@ -108,6 +108,10 @@ footer {
         font-size: 1.1rem;
     }
 
+    .subtitulo-nosotros {
+        font-size: 1.5rem;
+    }
+    
     .imagen-equipo {
         height: auto; 
         max-height: 300px;
