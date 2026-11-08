@@ -1,0 +1,129 @@
+:root {
+    --primary: #005B96;
+    --secondary: #03A9F4;
+    --dark: #333333;
+    --light-bg: #F4F7F6;
+}
+
+body {
+    background-color: #F4F7F6;
+    font-family: 'Inter', sans-serif !important;
+    color: var(--dark);
+}
+
+/* Navbar personalizada */
+.navbar-custom {
+    background-color: var(--primary);
+}
+.navbar-custom .navbar-brand {
+    font-weight: 700 !important;
+    font-size: 1.5rem !important; 
+}
+.navbar-custom .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+}
+.navbar-custom .nav-link.active, 
+.navbar-custom .nav-link:hover {
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+/* Base del Header */
+header.bg-dark {
+    background-color: #000000 !important; /* Fuerza el fondo a negro puro */
+}
+
+header.bg-dark img {
+    opacity: 0.45; /* Vuelve la imagen semi-transparente para que se mezcle con el fondo negro */
+    transition: opacity 0.3s ease;
+}
+.nosotros-header {
+    height: 60vh; 
+    min-height: 400px;
+}
+
+.header-custom {
+    text-align: right;
+    font-size: 2.3rem;
+    padding-right: 20px;
+}
+
+/* Imagen de sección Nosotros */
+.imagen-equipo {
+    height: 350px; 
+    object-fit: cover;
+}
+
+.nosotros-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nosotros-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+}
+
+.valor-item i {
+    transition: transform 0.3s ease;
+}
+
+.valor-item:hover i {
+    transform: scale(1.15);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark) !important;
+    font-size: 0.9rem !important;
+}
+.footer-logo {
+    color: var(--secondary) !important;
+    font-weight: 700 !important;
+    font-size: 1.3rem !important;
+}
+.texto-footer{
+    color: #D7D7D7 !important;
+}
+
+/* Diseño responsivo */
+@media screen and (max-width: 800px) {
+    .nosotros-header {
+        height: 50vh;
+        min-height: 350px;
+    }
+
+    .nuestra-historia{
+        width: 100% !important;
+    }
+    
+    .header-custom {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .nosotros-card {
+        padding: 2rem !important;
+    }
+    
+    .titulo-valor {
+        font-size: 1.1rem;
+    }
+
+    .imagen-equipo {
+        height: auto; 
+        max-height: 300px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .titulo-nosotros {
+        font-size: 1.8rem !important; 
+    }
+    
+    .subtitulo-nosotros {
+        font-size: 1rem;
+    }
+}
