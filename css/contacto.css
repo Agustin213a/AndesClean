@@ -137,6 +137,11 @@ footer {
         height: 50vh;
         min-height: 350px;
     }
+
+    .subtitulo-contacto {
+        font-size: 1.5rem;
+    }
+    
     .header-custom {
         text-align: center;
         padding-right: 0;
