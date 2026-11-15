@@ -35,13 +35,14 @@ body {
 
 /* Header de Servicios */
 header.bg-dark {
-    background-color: #000000 !important; /* Fuerza el fondo a negro puro */
+    background-color: #000000 !important;
 }
 
 header.bg-dark img {
-    opacity: 0.45; /* Vuelve la imagen semi-transparente para que se mezcle con el fondo negro */
+    opacity: 0.45;
     transition: opacity 0.3s ease;
 }
+
 .servicios-header {
     height: 60vh; 
     min-height: 400px;
@@ -51,21 +52,6 @@ header.bg-dark img {
     text-align: right;
     font-size: 2.3rem;
     padding-right: 20px;
-}
-
-.hero-servicios {
-    height: 40vh;
-    min-height: 300px;
-    background-color: var(--primary);
-}
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(0, 91, 150, 0.3), rgba(0, 0, 0, 0.6));
-    z-index: 1;
 }
 
 /* Bloques de Servicios */
@@ -111,20 +97,49 @@ header.bg-dark img {
     line-height: 1;
 }
 
-/* Botones */
-.btn-celeste {
-    background-color: var(--secondary);
-    color: white;
-    border-radius: 20px;
-    padding: 10px 28px;
-    font-weight: 600;
-    border: none;
+/* Botones unificados con todo el sitio */
+.btn-celeste,
+.btn-azul,
+.btn-secundario {
+    border-radius: 20px !important;
+    padding: 10px 28px !important;
+    font-weight: 600 !important;
     transition: all 0.3s ease;
 }
+
+.btn-celeste {
+    background-color: var(--secondary) !important;
+    color: white !important;
+    border: none !important;
+}
 .btn-celeste:hover {
-    background-color: #0288d1;
-    color: white;
+    background-color: var(--primary) !important;
+    color: white !important;
     transform: translateY(-2px);
+}
+
+.btn-azul {
+    background-color: var(--primary) !important;
+    color: white !important;
+    border: none !important;
+}
+.btn-azul:hover {
+    background-color: #004470 !important;
+    color: white !important;
+}
+
+.btn-secundario {
+    background-color: transparent !important;
+    color: var(--dark) !important;
+    border: 1px solid #ced4da !important;
+}
+.btn-secundario:hover {
+    background-color: #e9ecef !important;
+}
+
+/* Estilos del Modal */
+.modal-header-custom {
+    background-color: var(--primary);
 }
 
 /* Footer */
@@ -137,7 +152,7 @@ footer {
     font-weight: 700 !important;
     font-size: 1.3rem !important;
 }
-.texto-footer{
+.texto-footer {
     color: #D7D7D7 !important;
 }
 
