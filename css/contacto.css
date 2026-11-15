@@ -33,11 +33,11 @@ body {
 
 /* Base del Header */
 header.bg-dark {
-    background-color: #000000 !important; /* Fuerza el fondo a negro puro */
+    background-color: #000000 !important;
 }
 
 header.bg-dark img {
-    opacity: 0.45; /* Vuelve la imagen semi-transparente para que se mezcle con el fondo negro */
+    opacity: 0.45;
     transition: opacity 0.3s ease;
 }
 .contacto-header {
@@ -50,7 +50,6 @@ header.bg-dark img {
     padding-right: 20px;
     font-size: 2.3rem;
 }
-
 
 /* Estilos de las tarjetas (cajas blancas) */
 .contacto-card {
@@ -89,14 +88,15 @@ header.bg-dark img {
     box-shadow: 0 0 0 0.25rem rgba(0, 91, 150, 0.15);
 }
 
-/* Botón principal */
+/* Botón principal unificado con todo el sitio */
 .btn-azul {
     background-color: var(--primary) !important;
     color: #ffffff !important;
-    font-weight: 600;
-    border-radius: 6px;
-    border: none;
-    transition: background-color 0.3s ease;
+    font-weight: 600 !important;
+    border-radius: 20px !important;
+    padding: 10px 28px !important;
+    border: none !important;
+    transition: all 0.3s ease;
 }
 
 .btn-azul:hover {
@@ -117,6 +117,10 @@ header.bg-dark img {
     font-size: 0.95rem;
 }
 
+.mapa-contenedor {
+    max-height: 350px;
+}
+
 /* Footer */
 footer {
     background-color: var(--dark) !important;
@@ -127,7 +131,7 @@ footer {
     font-weight: 700 !important;
     font-size: 1.3rem !important;
 }
-.texto-footer{
+.texto-footer {
     color: #D7D7D7 !important;
 }
 
