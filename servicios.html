@@ -42,6 +42,7 @@
 
     <main class="container py-5">
 
+        <!-- Bloque 1: Casas y Residencias -->
         <section class="servicio-bloque p-4 p-md-5 mb-5 rounded-4">
             <div class="row align-items-center g-5">
                 <div class="col-md-6 order-2 order-md-1">
@@ -52,7 +53,9 @@
                         <li>Limpieza detallada de ventanales y aberturas.</li>
                         <li>Aspirado y tratamiento de alfombras y tapizados.</li>
                     </ul>
-                    <a href="./contacto.html" class="btn btn-celeste mt-3 shadow-sm">Solicitar Presupuesto</a>
+                    <button type="button" class="btn btn-celeste mt-3 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalResidencial">
+                        Ver protocolo y detalles
+                    </button>
                 </div>
                 <div class="col-md-6 order-1 order-md-2 text-center">
                     <img src="./img/carrusel1.jpg" alt="Limpieza de cocinas" class="img-fluid rounded-4 shadow-sm servicio-img">
@@ -60,6 +63,7 @@
             </div>
         </section>
 
+        <!-- Bloque 2: Comercial y Oficinas -->
         <section class="servicio-bloque bg-transparent p-4 p-md-5 mb-5">
             <div class="row align-items-center g-5">
                 <div class="col-md-6 text-center">
@@ -73,11 +77,14 @@
                         <li>Provisión constante de insumos sanitarios.</li>
                         <li>Gestión, separación y retiro de residuos.</li>
                     </ul>
-                    <a href="./contacto.html" class="btn btn-celeste mt-3 shadow-sm">Cotizar para mi empresa</a>
+                    <button type="button" class="btn btn-celeste mt-3 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalComercial">
+                        Ver protocolo y detalles
+                    </button>
                 </div>
             </div>
         </section>
 
+        <!-- Bloque 3: Post-Evento -->
         <section class="servicio-bloque p-4 p-md-5 mb-5 rounded-4">
             <div class="row align-items-center g-5">
                 <div class="col-md-6 order-2 order-md-1">
@@ -88,7 +95,9 @@
                         <li>Lavado profundo de pisos y superficies manchadas.</li>
                         <li>Restauración del espacio a su estado original.</li>
                     </ul>
-                    <a href="contacto.html" class="btn btn-celeste mt-3 shadow-sm">Consultar disponibilidad</a>
+                    <button type="button" class="btn btn-celeste mt-3 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalEvento">
+                        Ver protocolo y detalles
+                    </button>
                 </div>
                 <div class="col-md-6 order-1 order-md-2 text-center">
                     <img src="./img/carrusel3.jpg" alt="Limpieza post evento" class="img-fluid rounded-4 shadow-sm servicio-img">
@@ -97,6 +106,89 @@
         </section>
 
     </main>
+
+    <!-- =========================================
+         MODALES INFORMATIVOS DE SERVICIOS
+         ========================================= -->
+
+    <!-- Modal 1: Residencial -->
+    <div class="modal fade" id="modalResidencial" tabindex="-1" aria-labelledby="modalResidencialLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0 shadow">
+                <div class="modal-header modal-header-custom text-white rounded-top-4">
+                    <h5 class="modal-title fw-bold" id="modalResidencialLabel">🫧 Limpieza de Casas y Residencias</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p class="text-muted">Nuestro protocolo residencial está pensado para higienizar a fondo sin dañar superficies delicadas ni muebles.</p>
+                    <h6 class="fw-bold mb-2" style="color: var(--primary);">¿Qué incluye el servicio?</h6>
+                    <ul class="servicio-lista mb-3">
+                        <li><strong>Insumos y maquinaria incluidos:</strong> Llevamos aspiradoras industriales, limpiadores a vapor y productos biodegradables.</li>
+                        <li><strong>Cocina a fondo:</strong> Desengrase de campanas, hornos, mesadas y azulejos.</li>
+                        <li><strong>Habitaciones y livings:</strong> Limpieza de zócalos, luminarias, persianas y pisos flotantes o porcelanatos.</li>
+                        <li><strong>Modalidad flexible:</strong> Podés contratar por jornada única (ej. limpieza de primavera o mudanza) o abono semanal.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer border-0 px-4 pb-4 pt-0 justify-content-between">
+                    <button type="button" class="btn btn-secundario" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="./contacto.html" class="btn btn-azul">Solicitar Presupuesto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Comercial -->
+    <div class="modal fade" id="modalComercial" tabindex="-1" aria-labelledby="modalComercialLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0 shadow">
+                <div class="modal-header modal-header-custom text-white rounded-top-4">
+                    <h5 class="modal-title fw-bold" id="modalComercialLabel">🫧 Mantenimiento Comercial y Oficinas</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p class="text-muted">Diseñamos un cronograma operativo que se ajusta al movimiento de tu oficina, consultorio o local comercial.</p>
+                    <h6 class="fw-bold mb-2" style="color: var(--primary);">¿Qué incluye el servicio?</h6>
+                    <ul class="servicio-lista mb-3">
+                        <li><strong>Horarios a contra-turno:</strong> Trabajamos temprano en la mañana o al cierre para no interferir con tu equipo.</li>
+                        <li><strong>Desinfección de puestos:</strong> Sanitización segura de escritorios, salas de reuniones y áreas comunes.</li>
+                        <li><strong>Vidrieras y accesos:</strong> Limpieza de frentes vidriados en altura baja y media.</li>
+                        <li><strong>Personal asegurado:</strong> Equipo identificado, capacitado y con cobertura ART vigente.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer border-0 px-4 pb-4 pt-0 justify-content-between">
+                    <button type="button" class="btn btn-secundario" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="./contacto.html" class="btn btn-azul">Solicitar Presupuesto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Post-Evento -->
+    <div class="modal fade" id="modalEvento" tabindex="-1" aria-labelledby="modalEventoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0 shadow">
+                <div class="modal-header modal-header-custom text-white rounded-top-4">
+                    <h5 class="modal-title fw-bold" id="modalEventoLabel">🫧 Limpieza Post-Evento</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p class="text-muted">Ideal para salones, quinchos, espacios corporativos o domicilios particulares luego de una reunión o fiesta.</p>
+                    <h6 class="fw-bold mb-2" style="color: var(--primary);">¿Qué incluye el servicio?</h6>
+                    <ul class="servicio-lista mb-3">
+                        <li><strong>Cuadrilla rápida:</strong> Equipos de 2 a 6 operarios según las dimensiones del salón para dejar todo listo en pocas horas.</li>
+                        <li><strong>Tratamiento de manchas:</strong> Remoción de derrames de bebidas o comida en pisos y tapizados.</li>
+                        <li><strong>Sanitarios y cocinas:</strong> Higienización completa de áreas de catering y baños de invitados.</li>
+                        <li><strong>Orden general:</strong> Embolsado, clasificación de reciclables y acomodo del mobiliario.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer border-0 px-4 pb-4 pt-0 justify-content-between">
+                    <button type="button" class="btn btn-secundario" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="./contacto.html" class="btn btn-azul">Solicitar Presupuesto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer class="text-white py-4 mt-auto">
         <div class="container">
             <div class="row align-items-center">
