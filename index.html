@@ -33,15 +33,60 @@
         </div>
     </nav>
     
-    <header class="position-relative bg-dark hero-header">
-        <img src="./img/imagen-inicio.jpg" class="w-100 h-100" style="object-fit: cover;object-position: top;" alt="Equipo de limpieza profesional">
-        <div class="position-absolute top-50 start-50 translate-middle text-center text-white w-100 px-3" style="z-index: 10;">
-            <h1 class="display-5 fw-bold mb-3 titulo-principal">Más que limpiar, transformamos espacios.</h1>
-            <p class="lead mb-4">Servicios de limpieza profesionales para hogares, oficinas y comercios.</p>
-            <a href="./nosotros.html" class="btn btn-header btn-outline-light rounded-pill px-4 py-2 fw-semibold">
-                Nosotros <i class="bi bi-chevron-right ms-1"></i>
-            </a>
+    <!-- Carrusel / Slider principal -->
+    <header id="heroCarousel" class="carousel slide bg-dark hero-header" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+
+        <div class="carousel-inner h-100">
+            <!-- Slide 1 -->
+            <div class="carousel-item active h-100 position-relative">
+                <img src="./img/imagen-inicio.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: top;" alt="Equipo de limpieza profesional">
+                <div class="position-absolute top-50 start-50 translate-middle text-center text-white w-100 px-4" style="z-index: 10;">
+                    <h1 class="display-5 fw-bold mb-3 titulo-principal">Más que limpiar, transformamos espacios.</h1>
+                    <p class="lead mb-4">Servicios de limpieza profesionales para hogares, oficinas y comercios.</p>
+                    <a href="./nosotros.html" class="btn btn-header btn-outline-light">
+                        Nosotros <i class="bi bi-chevron-right ms-1"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item h-100 position-relative">
+                <img src="./img/servicios-inicio.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: top;" alt="Servicios de limpieza integral">
+                <div class="position-absolute top-50 start-50 translate-middle text-center text-white w-100 px-4" style="z-index: 10;">
+                    <h2 class="display-5 fw-bold mb-3 titulo-principal">Soluciones a medida para cada ambiente.</h2>
+                    <p class="lead mb-4">Limpieza residencial, mantenimiento de oficinas y post-evento.</p>
+                    <a href="./servicios.html" class="btn btn-header btn-outline-light">
+                        Ver Servicios <i class="bi bi-chevron-right ms-1"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item h-100 position-relative">
+                <img src="./img/nosotros-inicio.webp" class="d-block w-100 h-100" style="object-fit: cover; object-position: top;" alt="Presupuestos de limpieza">
+                <div class="position-absolute top-50 start-50 translate-middle text-center text-white w-100 px-4" style="z-index: 10;">
+                    <h2 class="display-5 fw-bold mb-3 titulo-principal">Compromiso y confianza en cada detalle.</h2>
+                    <p class="lead mb-4">Escribinos hoy mismo y armamos un plan adaptado a tus horarios.</p>
+                    <a href="./contacto.html" class="btn btn-header btn-outline-light">
+                        Contactanos <i class="bi bi-chevron-right ms-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" style="z-index: 15;">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" style="z-index: 15;">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
     </header>
 
     <section class="container py-5 text-center">
@@ -81,7 +126,7 @@
         </div>
     </section>
 
-    <section class="clientes-section py-5 text-center">
+    <section class="clientes-section py-5 text-center border-top">
         <div class="container">
             <h2 class="mb-5 fw-bold">Clientes que confían en nosotros:</h2>
             
@@ -104,7 +149,7 @@
                 </div>
             </div>
             
-            <a href="./contacto.html" class="btn btn-azul px-4 py-2">Contactanos</a>
+            <a href="./contacto.html" class="btn btn-azul">Contactanos</a>
         </div>
     </section>
 
