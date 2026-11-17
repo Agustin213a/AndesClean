@@ -4,7 +4,6 @@
     --secondary: #03A9F4;
     --dark: #333333;
     --light-bg: #F4F7F6;
-    --gray-bg: #F0F2F5;
 }
 
 body {
@@ -50,7 +49,7 @@ header.bg-dark img {
 
 /* Bloques de Servicios */
 .servicio-bloque {
-    background-color: var(--gray-bg);
+    background-color: var(--light-bg);
 }
 .servicio-titulo {
     color: var(--primary);
