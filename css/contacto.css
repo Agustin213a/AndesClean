@@ -31,7 +31,7 @@ body {
     text-underline-offset: 4px;
 }
 
-/* Base del Header */
+/* Header Unificado */
 header.bg-dark {
     background-color: #000000 !important;
 }
@@ -40,15 +40,10 @@ header.bg-dark img {
     opacity: 0.45;
     transition: opacity 0.3s ease;
 }
-.contacto-header {
+
+.hero-header {
     height: 60vh; 
     min-height: 400px;
-}
-
-.header-custom {
-    text-align: right;
-    padding-right: 20px;
-    font-size: 2.3rem;
 }
 
 /* Estilos de las tarjetas (cajas blancas) */
