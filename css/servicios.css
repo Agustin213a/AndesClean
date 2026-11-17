@@ -33,7 +33,7 @@ body {
     text-underline-offset: 4px;
 }
 
-/* Header de Servicios */
+/* Header Unificado */
 header.bg-dark {
     background-color: #000000 !important;
 }
@@ -43,15 +43,9 @@ header.bg-dark img {
     transition: opacity 0.3s ease;
 }
 
-.servicios-header {
+.hero-header {
     height: 60vh; 
     min-height: 400px;
-}
-
-.header-custom {
-    text-align: right;
-    font-size: 2.3rem;
-    padding-right: 20px;
 }
 
 /* Bloques de Servicios */
