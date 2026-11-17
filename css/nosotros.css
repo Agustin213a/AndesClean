@@ -31,24 +31,19 @@ body {
     text-underline-offset: 4px;
 }
 
-/* Base del Header */
+/* Header Unificado */
 header.bg-dark {
-    background-color: #000000 !important; /* Fuerza el fondo a negro puro */
+    background-color: #000000 !important;
 }
 
 header.bg-dark img {
-    opacity: 0.45; /* Vuelve la imagen semi-transparente para que se mezcle con el fondo negro */
+    opacity: 0.45;
     transition: opacity 0.3s ease;
 }
-.nosotros-header {
+
+.hero-header {
     height: 60vh; 
     min-height: 400px;
-}
-
-.header-custom {
-    text-align: right;
-    font-size: 2.3rem;
-    padding-right: 20px;
 }
 
 /* Imagen de sección Nosotros */
